@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaibhav - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(23, 23, 134);
+            background: linear-gradient(to right,rgb(179, 187, 247),rgb(59, 59, 252));
+            color: white;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            background-color: rgba(132, 132, 222, 0.629);
+        }
+        nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li{
+          list-style: none;
+         margin: 0 50px;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover{
+            color: rgb(178, 178, 233);
+            font-size: 1.2rem;
+        }
+        main hr{
+            border: 0;
+            background: rgb(71, 210, 71);
+            height: 1.8px;
+            margin: 10px 10px;
+        }
+        .left{
+            font-size: 2rem;
+        }
+        .firstsection{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 130px 0;
+        }
+        .firstsection > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            font-size: 2.05rem;
+        }
+        .leftsection .buttons{
+            padding: 60px 0;
+        }
+        .leftsection .btn{
+            padding: 12px;
+            background: rgb(39, 39, 167);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .rightsection {
+            margin-left: 90px;
+        }
+        .rightsection img{
+            width: 130%;
+            height: 514px;
+        }
+        .purple{
+            color: blueviolet;
+        }
+        .text-gray{
+            color: gray;
+        }
+
+        #element{
+            color: blueviolet;
+        }
+        .secondsection{
+            max-width: 80vw;
+            margin: auto;
+        }
+        .secondsection h1{
+            font-size: 1.3rem;
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+           <marquee> <div class="left">Vaibhav Krishna's Portfolio</div></marquee>
+           
+            <div class="right">
+                <ul>
+                    <li><a href="./index.html" target =" ">Home</a></li>
+                    <li><a href="./about.html" target =" ">About</a></li>
+                    <li><a href="./educa.html" target=" ">Educational Details</a></li>
+                    <li><a href="./project.html" target=" ">Projects</a></li>
+                    <li><a href="./contactme.html" target=" ">Contact Me</a></li>
+                    <li><a href="./certification.html" target=" ">Certification</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Vaibhav krishna</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button id="downloadResumeButton" class="btn">Download Resume</button>
+                </a>
+                <a href="https://github.com/vaibhavkrishna2314"><button class="btn">Visit Github</button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <!-- <img src="./vai12.png" alt="Developer image"> -->
+                <img src="./imgright.jpg" alt="Developer image">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Educational Achievements</h1>
+        </section>
+    </main>
+    <!-- here typed js is used -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>  
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer', 'and explore new things' , 'Think creative' , 'learn from the mistake '],
+          typeSpeed: 50,
+        });
+
+      </script>
+      <script src="script.js"></script>
+</body>
+</html>
